@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- The Main Style Sheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Clock Style -->
+  <link rel="stylesheet" href="clock.css">
+  <!-- About Us Style Sheet -->
+  <link rel="stylesheet" href="about.css">
+</head>
+<body onload="repeat()">
+  <header>
+
+  </header>
+
+  <nav>
+    <div id="up" class="logo"><a href="index.html">BlogTitle</a></div>
+    
+    <!-- Toogle Nav -->
+    <div class="toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    
+    <div class="pageLinks">
+      <ul>
+      <!-- Pages Links -->
+      <li><a href="about.html">Contact us</a></li>
+    </ul>
+  </div>
+  </nav>
+
+  <main>
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nihil a animi! Obcaecati vero neque totam incidunt architecto odit explicabo, dicta reprehenderit beatae! Molestiae quasi eaque repellat nostrum temporibus fugiat.</p>
+    <section class="ourTeam">
+      <h2>Our Team</h2>
+      <div class="names">
+        <div>Name 1</div>
+        <div>Name 2</div>
+        <div>Name 3</div>
+        <div>Name 4</div>
+        <div>Name 5</div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="contact" id="contact">
+      <div class="title white">
+          <h2 class="titleText">Contact Us</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nihil a animi! Obcaecati vero neque totam incidunt architecto odit explicabo, dicta reprehenderit beatae! Molestiae quasi eaque repellat nostrum temporibus fugiat.</p>
+      </div>
+      <br>
+      <!-- Contact Form -->
+      <div class="contactForm">
+          <h3>Send Us A Message</h3>
+          <!-- Input 1 First Name -->
+          <div class="inputBox">
+              <input type="text" placeholder="First Name">
+          </div>
+          <!-- Input 1 Last Name -->
+          <div class="inputBox">
+              <input type="text" placeholder="Last Name">
+          </div>
+          <!-- Input 2 Email -->
+          <div class="inputBox">
+              <input type="text" placeholder="Email">
+          </div>
+          <!-- Input 3 -->
+          <div class="inputBox">
+              <textarea placeholder="Put Your Message"></textarea>
+          </div>
+          <!-- Input 3 Submit -->
+          <div class="inputBox">
+              <input type="submit" value="Send">
+          </div>
+      </div>
+  </section>
+  </main>
+
+  
+  <footer>
+    <div class="team">
+      <div>Our Team</div>
+      <div>Name 1</div>
+      <div>Name 2</div>
+      <div>Name 3</div>
+      <div>Name 4</div>
+      <div>Name 5</div>
+    </div>
+    <!-- * Start Clock -->
+    <div class="clock">
+      <div class="datetime">
+        <div class="date">
+          <span id="dayname">Day</span>,
+          <span id="month">Month</span>
+          <span id="daynum">00</span>,
+          <span id="year">Year</span>
+        </div>
+        
+        <div class="time">
+          <span id="hour">00</span>:
+          <span id="minuts">00</span>:
+          <span id="seconds">00</span>
+          <span id="period">AM</span>
+        </div>
+
+        <div class="IEEE">
+          IEEE Web committee
+        </div>
+      </div>
+    </div>
+    <!-- * End Clock -->
+    <a class="goUp" href="#up">go<br>UP</a>
+  </footer>
+  <!-- The Main Script -->
+  <script src="script.js"></script>
+</clock>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- The Main Style Sheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Clock Style -->
+  <link rel="stylesheet" href="clock.css">
+</head>
+<body onload="repeat()">
+  <header>
+
+  </header>
+
+  <nav>
+    <div id="up" class="logo">BlogTitle</div>
+    
+    <!-- Toogle Nav -->
+    <div class="toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    
+    <div class="pageLinks">
+      <ul>
+      <!-- Pages Links -->
+      <li><a href="about.html">Contact us</a></li>
+    </ul>
+  </div>
+  </nav>
+
+  <section class="changeLayout">
+    <div onclick="horizontal()" id="horizontal">Horizontal</div>
+    <div onclick="defaultL()" id="default">Default Layout</div>
+    <div id="on-hover">On Hover</div>
+  </section>
+
+  <main>
+    <div class="blog default">
+      <a href="pages/blog1.html">
+        <img src="https://via.placeholder.com/400x250/?text=Blog+1+image" alt="">
+        <div class="details">
+          <h3>Blog 1</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis porro odio quae voluptas neque unde natus ut vero similique repudiandae nobis impedit voluptate, libero vel aperiam est molestias optio ipsum!</p>
+        </div>
+      </a>
+    </div>
+    <div class="blog default">
+      <a href="pages/blog2.html">
+        <img src="https://via.placeholder.com/400x250/?text=Blog+2+image" alt="">
+        <div class="details">
+          <h3>Blog 2</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis porro odio quae voluptas neque unde natus ut vero similique repudiandae nobis impedit voluptate, libero vel aperiam est molestias optio ipsum!</p>
+        </div>
+      </a>
+    </div>
+    <div class="blog default">
+      <a href="pages/blog3.html">
+        <img src="https://via.placeholder.com/400x250/?text=Blog+3+image" alt="">
+        <div class="details">
+          <h3>Blog 3</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis porro odio quae voluptas neque unde natus ut vero similique repudiandae nobis impedit voluptate, libero vel aperiam est molestias optio ipsum!</p>
+        </div>
+      </a>
+    </div>
+    <div class="blog default">
+      <a href="pages/blog4.html">
+        <img src="https://via.placeholder.com/400x250/?text=Blog+4+image" alt="">
+        <div class="details">
+          <h3>Blog 4</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis porro odio quae voluptas neque unde natus ut vero similique repudiandae nobis impedit voluptate, libero vel aperiam est molestias optio ipsum!</p>
+        </div>
+        </a>
+    </div>
+    <div class="blog default">
+      <a href="pages/blog5.html">
+        <img src="https://via.placeholder.com/400x250/?text=Blog+5+image" alt="">
+        <div class="details">
+          <h3>Blog 5</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis porro odio quae voluptas neque unde natus ut vero similique repudiandae nobis impedit voluptate, libero vel aperiam est molestias optio ipsum!</p>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  
+  <footer>
+    <div class="team">
+      <div>Our Team</div>
+      <div>Name 1</div>
+      <div>Name 2</div>
+      <div>Name 3</div>
+      <div>Name 4</div>
+      <div>Name 5</div>
+    </div>
+    <!-- * Start Clock -->
+    <div class="clock">
+      <div class="datetime">
+        <div class="date">
+          <span id="dayname">Day</span>,
+          <span id="month">Month</span>
+          <span id="daynum">00</span>,
+          <span id="year">Year</span>
+        </div>
+        
+        <div class="time">
+          <span id="hour">00</span>:
+          <span id="minuts">00</span>:
+          <span id="seconds">00</span>
+          <span id="period">AM</span>
+        </div>
+        <div class="IEEE">
+          IEEE Web committee
+        </div>
+      </div>
+    </div>
+    <!-- * End Clock -->
+    <a class="goUp" href="#up">go<br>UP</a>
+  </footer>
+  <!-- The Main Script -->
+  <script src="script.js"></script>
+</clock>
+</html>

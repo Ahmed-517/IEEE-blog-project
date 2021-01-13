@@ -1,0 +1,16 @@
+.pageTitle {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.content {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trialDiv {
+  font-size: 5em;
+}

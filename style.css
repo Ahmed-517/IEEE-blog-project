@@ -30,26 +30,26 @@ div.pageLinks {
   height: 100%;
 }
 
-ul {
+nav ul {
   display: flex;
   /* justify-content: space-between; */
 }
 
-li {
+nav ul li {
   list-style: none;
   font-size: 1.3em;
   text-transform: uppercase;
   text-align: center;
 }
 
-ul a {
+nav ul a {
   display: block;
   padding: 1rem;
   color: #111;
   text-decoration: none;
 }
 
-ul li:hover {
+nav ul li:hover {
   background-color: aquamarine;
   color: #fff;
   /* ? Border */
@@ -132,6 +132,7 @@ main .default {
 }
 main .default img {
   width: 100%;
+  height: 70%;
 }
 main .default a {
   text-decoration: none;
@@ -161,15 +162,13 @@ footer {
   font: 2em sans-serif;
 }
 
-footer a.goUp {
-  border: 1px solid;
-  border-radius: 5px;
-  margin: 10px;
-  color: #fff;
+.goUp {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
 }
-
-footer a.goUp:hover {
-  background-color: darkcyan;
+.goUp img {
+  width: 100%;
 }
 footer a.goUp {
   padding: 5px;
@@ -179,13 +178,24 @@ footer a.goUp {
 
 /*  */
 @media (max-width: 700px) {
+  /* 
   .toggle {
     display: flex;
   }
+  */
   nav {
     /* display: none; */
     flex-direction: column;
     align-items: flex-start;
+  }
+  .changeLayout #horizontal {
+    display: none;
+  }
+  .changeLayout #on-hover {
+    flex-basis: 50%;
+  }
+  .changeLayout #default {
+    flex-basis: 50%;
   }
   div.pageLinks {
     width: 100%;
@@ -228,4 +238,82 @@ main div.horizontal img {
 main .horizontal .details {
   /* width: 50%; */
   text-align: center;
+}
+
+/* Hover Layout */
+.blogHover {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  margin: 5px;
+  border-radius:10px;
+}
+
+.blogHover .overlayHover {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  border-radius: 10px;
+}
+
+.blogHover:hover .overlayHover{
+  opacity: 1;
+}
+
+.blogHover img{
+  width: 100%;
+  /* Image Radius */
+  border-radius:10px;
+  height: 100%;
+}
+
+.blogHover .details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.blogHover:hover .details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.detailsHover h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.blogHover .details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
 }

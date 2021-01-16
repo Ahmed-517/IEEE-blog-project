@@ -15,7 +15,7 @@
   </header>
 
   <nav>
-    <div id="up" class="logo">BlogTitle</div>
+    <div id="up" class="logo">TechBlog</div>
     
     <!-- Toogle Nav -->
     <div class="toggle">
@@ -35,48 +35,53 @@
   <section class="changeLayout">
     <div onclick="horizontal()" id="horizontal">Horizontal</div>
     <div onclick="defaultL()" id="default">Default Layout</div>
-    <div id="on-hover">On Hover</div>
+    <div onclick="hover()" id="on-hover">On Hover</div>
   </section>
 
   <main>
     <div class="blog default">
       <a href="pages/blog1.html">
-        <img src="https://via.placeholder.com/400x250/?text=Blog+1+image" alt="">
+        <div class="overlayHover"></div>
+        <img src="images/whatsapp.jpg" alt="">
         <div class="details">
-          <h3>Blog 1</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis porro odio quae voluptas neque unde natus ut vero similique repudiandae nobis impedit voluptate, libero vel aperiam est molestias optio ipsum!</p>
+          <h3>WhatsApp extends 'confusing' update deadline</h3>
+          <p>WhatsApp has extended the deadline by which its two billion users must either accept its updated terms and conditions or stop using the service.</p>
         </div>
       </a>
     </div>
     <div class="blog default">
       <a href="pages/blog2.html">
-        <img src="https://via.placeholder.com/400x250/?text=Blog+2+image" alt="">
+        <div class="overlayHover"></div>
+        <img src="images/Coinbase.jpg" alt="">
         <div class="details">
-          <h3>Blog 2</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis porro odio quae voluptas neque unde natus ut vero similique repudiandae nobis impedit voluptate, libero vel aperiam est molestias optio ipsum!</p>
+          <h3>Coinbase commits to a ‘better customer experience’ following complaints</h3>
+          <p>Coinbase has a problem. As interest in bitcoin has soared along with its price, the popular cryptocurrency exchange has found itself the target of a growing spate of angry customers who haven’...</p>
         </div>
       </a>
     </div>
     <div class="blog default">
       <a href="pages/blog3.html">
-        <img src="https://via.placeholder.com/400x250/?text=Blog+3+image" alt="">
+        <div class="overlayHover"></div>
+        <img src="images/fake-twitter-accounts1.webp" alt="">
         <div class="details">
-          <h3>Blog 3</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis porro odio quae voluptas neque unde natus ut vero similique repudiandae nobis impedit voluptate, libero vel aperiam est molestias optio ipsum!</p>
+          <h3>Twitter’s decentralized future</h3>
+          <p>The platform’s vision of a sweeping open standard could also be the far-right’s internet endgame</p>
         </div>
       </a>
     </div>
     <div class="blog default">
       <a href="pages/blog4.html">
+        <div class="overlayHover"></div>
         <img src="https://via.placeholder.com/400x250/?text=Blog+4+image" alt="">
         <div class="details">
           <h3>Blog 4</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis porro odio quae voluptas neque unde natus ut vero similique repudiandae nobis impedit voluptate, libero vel aperiam est molestias optio ipsum!</p>
         </div>
-        </a>
+      </a>
     </div>
     <div class="blog default">
       <a href="pages/blog5.html">
+        <div class="overlayHover"></div>
         <img src="https://via.placeholder.com/400x250/?text=Blog+5+image" alt="">
         <div class="details">
           <h3>Blog 5</h3>
@@ -119,7 +124,7 @@
       </div>
     </div>
     <!-- * End Clock -->
-    <a class="goUp" href="#up">go<br>UP</a>
+    <a class="goUp" href="#up"><img src="up-icon.png" alt=""></a>
   </footer>
   <!-- The Main Script -->
   <script src="script.js"></script>

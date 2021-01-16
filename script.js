@@ -3,19 +3,19 @@ var blog = document.getElementsByClassName('blog');
 function horizontal() {
   for (var i=0; i < blog.length; i++) {
     blog[i].classList.add('horizontal');
-    blog[i].classList.remove('default', 'hover');
+    blog[i].classList.remove('default', 'blogHover');
   }
 };
 function defaultL() {
   for (var i=0; i < blog.length; i++) {
     blog[i].classList.add('default');
-    blog[i].classList.remove('hover',  'horizontal');
+    blog[i].classList.remove('blogHover',  'horizontal');
   }
 };
-function horizontal() {
+function hover() {
   for (var i=0; i < blog.length; i++) {
-    blog[i].classList.add('horizontal');
-    blog[i].classList.remove('default', 'hover');
+    blog[i].classList.add('blogHover');
+    blog[i].classList.remove('default', 'horizontal');
   }
 };
 

@@ -1,9 +1,31 @@
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+.backgroundOverlay {
+  position: fixed; /* Sit on top of the page content */
+  /* display: none;  Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
+}
 .pageTitle {
   text-align: center;
   font-size: 1.4em;
   font-weight: bold;
 }
-
+.logo a {
+  text-decoration: none;
+}
 .content {
   height: 75vh;
   display: flex;
@@ -11,7 +33,61 @@
   align-items: center;
   text-align: center;
 }
+.allContent {
+  display: flex;
+  flex-direction: row;
+}
+.articleContent {
+  text-align: center;
+  padding: 15px;
+  /* background-color: rgba(200, 200, 200, .5); */
+  width: 40%;
+  margin: 20px 0;
+}
+.articleContent div {
+  padding: 8px;
+  margin: 5px 0;
+  background-color: rgba(200, 200, 200, .8);
+  border-radius: 20px;
+}
+.articleContent div img {
+  /* border-radius: 15px; */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.articleContent img {
+  width: 98%;
+}
 
+.mainContent {
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  margin: 0 80px;
+  padding: 30px;
+  color: #fff;
+}
+.mainContent p {
+  margin: 20px 0;
+  font-size: 1.4em;
+}
+.mainContent img {
+  width: 55%;
+}
 .trialDiv {
   font-size: 5em;
+}
+
+@media (max-width: 700px) {
+  .allContent {
+    flex-direction: column;
+  }
+  .mainContent {
+    margin: 0;
+  }
+  .mainContent img {
+    width: 80%;
+  }
+}
+
+.centerIt {
+  text-align: center;
 }

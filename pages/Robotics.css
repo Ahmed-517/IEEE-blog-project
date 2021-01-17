@@ -8,6 +8,11 @@ body
 {
   background-color: PowderBlue;
 }
+/*
+.parent img {
+  width: 300px;
+}
+*/
 .parent div,.heading2
 {
   background-color:#191970;
@@ -25,8 +30,12 @@ body
  img[alt="robots image"]
  {
   margin:0 5px;
-  width:1510px;
-  max-height:500px;
+  /* width:1510px; */
+  width: 60%;
+  /* max-height:500px; */
+}
+img[alt="robots-1.jpg"] {
+  height: 300px;
 }
 hr{
   margin:5px;

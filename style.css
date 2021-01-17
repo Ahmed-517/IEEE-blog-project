@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --corn: cornflowerblue;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: 'Open Sans';
-  /* background-color: cornflowerblue; */
+  font-family: 'Roboto', sans-serif;
 }
 
 .background {
@@ -26,6 +32,12 @@ body {
   left: 0;
   top: 0;
   /* z-index: 0; */
+}
+.background .home a:hover {
+  color: var(--corn);
+}
+.background .header-area div:nth-child(2) a:hover {
+  color: var(--corn);
 }
 .header-area {
   display: flex;
@@ -51,6 +63,10 @@ body {
   margin: 4px 2px;
   transition: 0.3s;
 }
+.btn:hover {
+  background-color: var(--corn);
+  color: white;
+}
 .background-details {
   color: #fff;
   text-align: center;
@@ -64,16 +80,16 @@ body {
   margin-bottom: 8px;
   font-size: 5em;
 }
+.background-details h1 span {
+  color: var(--corn);
+}
 .background-details p {
   font-size: 1.3em;
   margin-bottom: 8px;
 }
-.btn:hover {
-  background-color: #3e8e41;
-  color: white;
-}
 nav {
-  background-color: aqua;
+  /* background-color: aqua; */
+  background-color: var(--corn);
   /* width: 100%; */
   /* height: 60px; */
   position: relative;
@@ -152,11 +168,12 @@ nav ul li:hover {
 */
 section.changeLayout {
   /* min-height: 40px; */
-  background-color: cornflowerblue;
+  background-color: rgb(85, 138, 236);
   /* flex properties */
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* border-top: 1px solid white; */
 }
 section.changeLayout div {
   text-align: center;
@@ -176,7 +193,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -185,30 +202,52 @@ main {
 * The Default Layout
 */
 main .default {
-  flex-basis: 410px;
+  flex-basis: 430px;
   text-align: center;
-  border: 2px solid;
   margin: 10px;
+  /*
+  * Not needed border
+  border: 2px solid;
   border-radius: 10px;
+  */
   overflow: hidden;
   padding: 10px;
 }
 main .default img {
+  /*
   width: 100%;
   height: 70%;
+  */
+  width: 410px;
+  height: 250px;
+  margin: auto;
+
 }
 main .default a {
   text-decoration: none;
-  color: #111;
+  color: #3b393d;
+}
+main .default h3 {
+  margin-bottom: 10px;
 }
 main .default:hover {
-  border-color: blue;
+  background-color: rgba(10, 10, 10, 0.116);
 }
+/*
+main .default p  {
+  visibility: hidden;
+  transition: .3s;
+}
+main .default:hover p  {
+  visibility: visible;
+}
+*/
 
 /* Footer */
 footer {
   /* height: 50px; */
-  background-color: darkblue;
+  /* background-color: darkblue; */
+  background-color: var(--corn);
   /* F L E X */
   display: flex;
   justify-content: space-around;
@@ -223,6 +262,7 @@ footer {
 }
 .team div:first-child {
   font: 2em sans-serif;
+  margin-bottom: 10px;
 }
 
 .goUp {
@@ -291,9 +331,11 @@ footer a.goUp {
 main div.horizontal {
   margin: 10px;
   border: 2px solid;
+  width: 100%;
 }
 main div.horizontal:hover {
-  border-color: rgb(14, 59, 209);
+  /* border-color: rgb(14, 59, 209); */
+  background-color: rgba(10, 10, 10, 0.116);
 }
 main div.horizontal a {
   /* width: 80%; */
@@ -305,12 +347,20 @@ main div.horizontal a {
   color: #111;
 }
 main div.horizontal img {
-  /* width: 50%; */
+  width: 30%;
+  height: 300px;
 }
 main .horizontal .details {
-  /* width: 50%; */
+  /* width: 30%; */
   text-align: center;
+  padding: 0 30px;
+  width: 70%;
 }
+main .horizontal .details h3 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
 
 /*
 * Hover Layout
@@ -369,8 +419,11 @@ main .horizontal .details {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.details h3 {
+.blogHover .details h3 {
   opacity: 1;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.5em;
 }
 .blogHover:hover .details{
   top: 50%;
@@ -392,4 +445,8 @@ main .horizontal .details {
 
 .fadeIn-bottom{
   top: 80%;
+}
+
+.clock {
+  margin: 30px;
 }

@@ -13,6 +13,7 @@
   align-items: center;
   background-color: #10101E;
   /* flex-direction: column; */
+  border-radius: 6px;
 }
 
 /* The Main Box */
